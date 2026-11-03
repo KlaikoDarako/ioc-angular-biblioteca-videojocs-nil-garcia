@@ -1,12 +1,23 @@
-<form (ngSubmit)="aplica()">
+<form #formFiltres="ngForm"  (ngSubmit)="aplica()">
 
   <label for="text">Cerca per títol</label>
   <input
     id="text"
     name="text"
     type="text"
+    required minlength="3"
+    #textCtrl="ngModel"
     [(ngModel)]="text">
 
+
+  @if (textCtrl.invalid && textCtrl.touched) {
+    <p class="error">
+      Escriu 3 caràcters com a mínim.
+    </p>
+  }
+
+  
+  
   <label for="categoria">Categoria</label>
   <select
     id="categoria"
@@ -20,7 +31,7 @@
     }
   </select>
 
-  <button type="submit">Aplica</button>
+  <button type="submit" [disabled]="formFiltres.invalid">Aplica</button>
 
   <button type="button" (click)="restableix()">
     Restableix

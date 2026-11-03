@@ -1,7 +1,16 @@
 
 <!-- Encara no fem el bucle. A l'estació 4 el convertirem en @for. -->
 <!-- TODO: afegeix a la targeta (seleccionar)="seleccionar.emit($event)" -->
-<app-targeta-videojoc
-  [videojoc]="videojocs[0]"
-  (seleccionar)="seleccionar.emit($event)">
-</app-targeta-videojoc>
+
+@if (videojocs.length === 0) {
+  <p class="sense-resultats">
+    No s'ha trobat cap videojoc amb els filtres seleccionats.
+    
+  </p>
+} @else {
+  <app-targeta-videojoc
+    [videojoc]="videojocs[0]"
+    (seleccionar)="seleccionar.emit($event)">
+  </app-targeta-videojoc>
+
+}
