@@ -1,0 +1,29 @@
+<form (ngSubmit)="aplica()">
+
+  <label for="text">Cerca per títol</label>
+  <input
+    id="text"
+    name="text"
+    type="text"
+    [(ngModel)]="text">
+
+  <label for="categoria">Categoria</label>
+  <select
+    id="categoria"
+    name="categoria"
+    [(ngModel)]="categoria">
+
+    <option value="">Totes</option>
+
+    @for (cat of categories; track cat) {
+      <option [value]="cat">{{ cat }}</option>
+    }
+  </select>
+
+  <button type="submit">Aplica</button>
+
+  <button type="button" (click)="restableix()">
+    Restableix
+  </button>
+
+</form>

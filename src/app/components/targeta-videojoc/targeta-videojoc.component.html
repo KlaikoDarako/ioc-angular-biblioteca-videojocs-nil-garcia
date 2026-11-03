@@ -1,0 +1,16 @@
+
+<article class="targeta">
+  <!-- TODO 1: passa la categoria al subcomponent -->
+  <app-etiqueta-categoria
+    [categoria]="videojoc.categoria">
+  </app-etiqueta-categoria>
+
+  <h3>{{ videojoc.titol }}</h3>
+
+  <p>{{ videojoc.descripcio }}</p>
+
+  <!-- TODO 2: emet el videojoc en fer clic -->
+  <button type="button" (click)="seleccionar.emit(videojoc)">
+    Veure detall
+  </button>
+</article>

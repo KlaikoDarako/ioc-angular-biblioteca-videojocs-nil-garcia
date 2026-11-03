@@ -7,7 +7,7 @@ export const VIDEOJOCS: Videojoc[] = [
     titol: "Aprovar a la primera",
     descripcio: "Somnis estudiantils",
     categoria: "Simulació",
-    dataLlançament: "2026-11-03",
+    dataLlancament: "2026-11-03",
     puntuacio: 10,
     destacat: true
   },  
@@ -16,7 +16,7 @@ export const VIDEOJOCS: Videojoc[] = [
     titol: "Ragnarok Online",
     descripcio: "Fantasia 2D en un mon 3D",
     categoria: "Rol",
-    dataLlançament: "2023-07-22",
+    dataLlancament: "2023-07-22",
     puntuacio: 9.2,
     destacat: true
   },
@@ -25,7 +25,7 @@ export const VIDEOJOCS: Videojoc[] = [
     titol: "Warframe",
     descripcio: "Ninjes galactics salvant el mon",
     categoria: "Acció",
-    dataLlançament: "2022-11-08",
+    dataLlancament: "2022-11-08",
     puntuacio: 9.0
   },
   {
@@ -33,7 +33,7 @@ export const VIDEOJOCS: Videojoc[] = [
     titol: "Path of Exile",
     descripcio: "Et donen por els skill-tree?",
     categoria: "Rol",
-    dataLlançament: "2021-05-19",
+    dataLlancament: "2021-05-19",
     puntuacio: 9.3,
     destacat: true
   },
@@ -42,7 +42,7 @@ export const VIDEOJOCS: Videojoc[] = [
     titol: "Spore",
     descripcio: "Pokemon pero millor",
     categoria: "Simulació",
-    dataLlançament: "2002-09-12",
+    dataLlancament: "2002-09-12",
     puntuacio: 8.7
   },
   {
@@ -50,7 +50,7 @@ export const VIDEOJOCS: Videojoc[] = [
     titol: "GunZ: The Duel",
     descripcio: "Aquest joc esta finissim, a les dungeons tenia una reinterpretacio de les mines de Moria de LotR",
     categoria: "Acció",
-    dataLlançament: "2007-02-14",
+    dataLlancament: "2007-02-14",
     puntuacio: 8.6
   },
   {
@@ -58,7 +58,7 @@ export const VIDEOJOCS: Videojoc[] = [
     titol: "Kingdom Hearts",
     descripcio: "Micki miaus i els 4 fantastics",
     categoria: "Aventura",
-    dataLlançament: "2005-06-30",
+    dataLlancament: "2005-06-30",
     puntuacio: 9.1,
     destacat: true
   },
@@ -67,7 +67,7 @@ export const VIDEOJOCS: Videojoc[] = [
     titol: "Digimon World 2003",
     descripcio: "Metalwargreymon aaaaaaaaaargg",
     categoria: "Rol",
-    dataLlançament: "2021-10-05",
+    dataLlancament: "2021-10-05",
     puntuacio: 8.9
   },
   {
@@ -75,7 +75,7 @@ export const VIDEOJOCS: Videojoc[] = [
     titol: "El nou joc",
     descripcio: "És el numero nou i tambe es nou.",
     categoria: "Aventura",
-    dataLlançament: "2009-09-09",
+    dataLlancament: "2009-09-09",
     puntuacio: 9,
     destacat: true
   },
@@ -84,7 +84,7 @@ export const VIDEOJOCS: Videojoc[] = [
     titol: "Deu de deu la nota de deu",
     descripcio: "Simulació perque vull aprovar",
     categoria: "Simulació",
-    dataLlançament: "2026-03-11",
+    dataLlancament: "2026-03-11",
     puntuacio: 9.5,
     destacat: true
   }

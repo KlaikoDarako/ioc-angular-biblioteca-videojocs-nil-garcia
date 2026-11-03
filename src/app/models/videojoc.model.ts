@@ -12,7 +12,7 @@ export interface Videojoc {
   titol: string;
   descripcio: string;
   categoria: CategoriaVideojoc;
-  dataLlançament: string;
+  dataLlancament: string;
   puntuacio: number;
   destacat?: boolean;
 }

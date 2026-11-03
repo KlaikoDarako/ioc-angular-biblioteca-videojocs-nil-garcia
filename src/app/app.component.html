@@ -28,6 +28,39 @@
     <p><strong>Git:</strong> 2.54.0.windows.1</p>
   </section>
 
+  
+  <section class="cataleg">
+    <h2>Catàleg de videojocs</h2>
+
+    <app-formulari-filtres
+      (aplicarFiltres)="aplicaFiltres($event)">
+    </app-formulari-filtres>
+
+    <app-llista-videojocs
+      [videojocs]="videojocsVisibles"
+      (seleccionar)="videojocSeleccionat = $event">
+    </app-llista-videojocs>
+
+    @if (videojocSeleccionat) {
+      <aside class="detall">
+        <h3>{{ videojocSeleccionat.titol }}</h3>
+        <p>{{ videojocSeleccionat.descripcio }}</p>
+        <p>Categoria: {{ videojocSeleccionat.categoria }}</p>
+        <p>Puntuació: {{ videojocSeleccionat.puntuacio }}</p>
+        <p>Data de llançament: {{ videojocSeleccionat.dataLlancament }}</p>
+
+        <button type="button" (click)="videojocSeleccionat = null">
+          Tanca
+        </button>
+      </aside>
+
+    } @else {
+
+      <p>Selecciona un videojoc per veure'n el detall.</p>
+
+    }
+  </section>
+
   <aside class="note">
     <p><strong>Nota curta:</strong> S'ha escollit el nom Biblioteca de videojocs, però desconec quin serà el contingut de les properes entregues i potser aquest nom no tindrà sentit en els pròxims EAC.</p>
     <p>He afegit informació extra a la targeta en comparació dels apunts proporcionats</p>
@@ -36,4 +69,4 @@
   </aside>
 </main>
 
-<router-outlet />
+<router-outlet/>
