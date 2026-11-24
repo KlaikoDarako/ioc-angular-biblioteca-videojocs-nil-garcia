@@ -19,6 +19,12 @@ describe('App', () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ioc-angular-biblioteca-videojocs-nil-garcia');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Biblioteca de videojocs');
   });
 });
+
+/**
+ correccio del test
+ Expected: "Hello, ioc-angular-biblioteca-videojocs-nil-garcia"
+Received: "Biblioteca de videojocs"
+ */

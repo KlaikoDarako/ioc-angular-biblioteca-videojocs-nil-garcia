@@ -1,0 +1,91 @@
+{
+  "elements": [
+    {
+      "id": "1",
+      "titol": "Aprovar a la primera",
+      "descripcio": "Somnis estudiantils",
+      "categoria": "Simulació",
+      "dataLlancament": "2026-11-03",
+      "puntuacio": 10,
+      "destacat": true
+    },
+    {
+      "id": "2",
+      "titol": "Ragnarok Online",
+      "descripcio": "Fantasia 2D en un mon 3D",
+      "categoria": "Rol",
+      "dataLlancament": "2023-07-22",
+      "puntuacio": 9.2,
+      "destacat": true
+    },
+    {
+      "id": "3",
+      "titol": "Warframe",
+      "descripcio": "Ninjes galactics salvant el mon",
+      "categoria": "Acció",
+      "dataLlancament": "2022-11-08",
+      "puntuacio": 9
+    },
+    {
+      "id": "4",
+      "titol": "Path of Exile",
+      "descripcio": "Et donen por els skill-tree?",
+      "categoria": "Rol",
+      "dataLlancament": "2021-05-19",
+      "puntuacio": 9.3,
+      "destacat": true
+    },
+    {
+      "id": "5",
+      "titol": "Spore",
+      "descripcio": "Pokemon pero millor",
+      "categoria": "Simulació",
+      "dataLlancament": "2002-09-12",
+      "puntuacio": 8.7
+    },
+    {
+      "id": "6",
+      "titol": "GunZ: The Duel",
+      "descripcio": "Aquest joc esta finissim, a les dungeons tenia una reinterpretacio de les mines de Moria de LotR",
+      "categoria": "Acció",
+      "dataLlancament": "2007-02-14",
+      "puntuacio": 8.6
+    },
+    {
+      "id": "7",
+      "titol": "Kingdom Hearts",
+      "descripcio": "Micki miaus i els 4 fantastics",
+      "categoria": "Aventura",
+      "dataLlancament": "2005-06-30",
+      "puntuacio": 9.1,
+      "destacat": true
+    },
+    {
+      "id": "8",
+      "titol": "Digimon World 2003",
+      "descripcio": "Metalwargreymon aaaaaaaaaargg",
+      "categoria": "Rol",
+      "dataLlancament": "2021-10-05",
+      "puntuacio": 8.9
+    },
+    {
+      "id": "9",
+      "titol": "El nou joc",
+      "descripcio": "És el numero nou i tambe es nou.",
+      "categoria": "Aventura",
+      "dataLlancament": "2009-09-09",
+      "puntuacio": 9,
+      "destacat": true
+    },
+    {
+      "id": "10",
+      "titol": "Deu de deu la nota de deu",
+      "descripcio": "Simulació perque vull aprovar",
+      "categoria": "Simulació",
+      "dataLlancament": "2026-03-11",
+      "puntuacio": 9.5,
+      "destacat": true
+    }    
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

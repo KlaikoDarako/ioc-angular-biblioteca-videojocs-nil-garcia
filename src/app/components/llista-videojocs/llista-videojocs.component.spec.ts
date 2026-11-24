@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { LlistaVideojocs } from './llista-videojocs.component';
+import { LlistaVideojocsComponent } from './llista-videojocs.component';
 
 describe('LlistaVideojocs', () => {
-  let component: LlistaVideojocs;
-  let fixture: ComponentFixture<LlistaVideojocs>;
+  let component: LlistaVideojocsComponent;
+  let fixture: ComponentFixture<LlistaVideojocsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LlistaVideojocs],
+      imports: [LlistaVideojocsComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(LlistaVideojocs);
+    fixture = TestBed.createComponent(LlistaVideojocsComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { EtiquetaCategoria } from './etiqueta-categoria.component';
+import { EtiquetaCategoriaComponent } from './etiqueta-categoria.component';
 
 describe('EtiquetaCategoria', () => {
-  let component: EtiquetaCategoria;
-  let fixture: ComponentFixture<EtiquetaCategoria>;
+  let component: EtiquetaCategoriaComponent;
+  let fixture: ComponentFixture<EtiquetaCategoriaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EtiquetaCategoria],
+      imports: [EtiquetaCategoriaComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(EtiquetaCategoria);
+    fixture = TestBed.createComponent(EtiquetaCategoriaComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

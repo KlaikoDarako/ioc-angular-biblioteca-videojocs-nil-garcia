@@ -1,0 +1,67 @@
+<form class="formulari-alta" [formGroup]="formulari" (ngSubmit)="crear()" aria-label="Nou videojoc">
+  <h2>Afegir un videojoc</h2>
+
+  <div class="camp">
+    <label for="titol">Títol</label>
+    <input id="titol" type="text" formControlName="titol" [class.invalid]="teError('titol')" />
+    @if (teError('titol')) {
+      <p class="missatge-error" role="alert">El títol és obligatori (mínim 3 caràcters).</p>
+    }
+  </div>
+
+  <div class="camp">
+    <label for="descripcio">Descripció</label>
+    <textarea id="descripcio" formControlName="descripcio" rows="2" [class.invalid]="teError('descripcio')"></textarea>
+    @if (teError('descripcio')) {
+      <p class="missatge-error" role="alert">La descripció és obligatòria (mínim 10 caràcters).</p>
+    }
+  </div>
+
+  <div class="fila">
+    <div class="camp">
+      <label for="categoria-nou">Categoria</label>
+      <select id="categoria-nou" formControlName="categoria">
+        @for (categoria of categories; track categoria) {
+          <option [value]="categoria">{{ categoria }}</option>
+        }
+      </select>
+    </div>
+
+    <!-- adaptat dels apunts 10.2. Crear el formulari d'alta-->
+    <div class="camp">
+      <label for="data-llancament">Data de llançament</label>
+      <input id="data-llancament" type="date" formControlName="dataLlancament" [class.invalid]="teError('dataLlancament')" />
+      @if (teError('dataLlancament')) {
+        <p class="missatge-error" role="alert">La data de llançament és obligatòria o esta mal escrita</p>
+      }
+    </div>
+
+    <div class="camp">
+      <label for="puntuacio">Puntuació (0-10)</label>
+      <input id="puntuacio" type="number" step="0.1" min="0" max="10" formControlName="puntuacio" [class.invalid]="teError('puntuacio')" />
+      @if (teError('puntuacio')) {
+        <p class="missatge-error" role="alert">La puntuació ha d'estar entre 0 i 10.</p>
+      }
+    </div>
+  </div>
+
+  <div class="camp">
+    <label>
+      <input type="checkbox" formControlName="destacat" />
+      Videojoc destacat
+    </label>
+  </div>
+
+  <div class="accions">
+    <button type="submit" [disabled]="formulari.invalid || enviant()">
+      {{ enviant() ? 'Enviant...' : 'Crear videojoc' }}
+    </button>
+  </div>
+
+  @if (missatge()) {
+    <p class="missatge-exit" role="status">{{ missatge() }}</p>
+  }
+  @if (error()) {
+    <p class="missatge-error" role="alert">{{ error() }}</p>
+  }
+</form>

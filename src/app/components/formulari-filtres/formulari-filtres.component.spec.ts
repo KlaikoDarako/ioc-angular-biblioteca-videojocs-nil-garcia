@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { FormulariFiltres } from './formulari-filtres.component';
+import { FormulariFiltresComponent } from './formulari-filtres.component';
 
 describe('FormulariFiltres', () => {
-  let component: FormulariFiltres;
-  let fixture: ComponentFixture<FormulariFiltres>;
+  let component: FormulariFiltresComponent;
+  let fixture: ComponentFixture<FormulariFiltresComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FormulariFiltres],
+      imports: [FormulariFiltresComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(FormulariFiltres);
+    fixture = TestBed.createComponent(FormulariFiltresComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

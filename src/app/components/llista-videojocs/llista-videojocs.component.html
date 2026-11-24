@@ -8,9 +8,10 @@
     
   </p>
 } @else {
+  @for (videojoc of videojocs; track videojoc.id) { <!-- faltava realitzar el @for del EAC1 (?) -->
   <app-targeta-videojoc
-    [videojoc]="videojocs[0]"
+    [videojoc]="videojoc"
     (seleccionar)="seleccionar.emit($event)">
   </app-targeta-videojoc>
-
+  }
 }
